@@ -1,0 +1,35 @@
+
+   ref https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+   ref https://linuxhint.com/bash_operator_examples/#o17
+
+  operators:-
+    Arithmetic Operators:- +, -, *, /, %, ect  -> op1.sh
+    Relational Operators:- -eq, -ne, -lt, -gt, -le, -gt   (or)  =, ==, !=,<,>, <=, >= 
+
+                          Relational Operators for Numbers:- -> op2.sh
+                                  -eq, -ne, -lt, -gt, -le, -ge
+                                   =, ==, !=,<,>, <,>  <=, >=
+
+                          Relational Operators for Strings:- -> op3.sh
+                                   =, ==, !=,<,>, <,>
+
+
+
+    Boolean/Logical Operators:- !, -o, -a  (or)  !, ||, &&  
+
+                                Logical Operators for Numbers:- -> op4.sh
+                                   !, ||, &&
+                                    -o, -a
+
+                                Logical Operators for Strings:- -> op5.sh
+                                   !, ||, &&
+                              
+    String Operators:- =, !=, -z, -n, str ( direct empty check)  -> op6.sh
+    File Test Operators:- -b, -c, -d, -g, -f, -k, -p, -t, -u, -r, -w, -x, -s, -e -> op7.sh
+                              -e, -f, -d, -s, -r, -w, -x, -O, -G, -u, -g, -N, -nt, -ot ( imp )
+                           
+
+
+    Bitwise operators:- !, &, |, <<, >>, >>>
+    Ternary operators:- ?:
+    Special operators:- , ( comma )

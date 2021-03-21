@@ -1,0 +1,135 @@
+
+================== Input / Output redirections ======================
+ 
+
+-----------------------------------------------------------------
+  - File Descriptors (FD) 
+    0 - standerd input
+    1 - standerd output
+    2 - standerd error
+
+-----------------------------------------------------------------
+   
+
+   - by default standerd input is taken from terminal & standerd output is printed in terminal
+   - but we can change input / output by redirecting
+       eg: output redirecting to files
+
+    we use 
+        >  for output redirecting ( overrride mode )
+        <  for input redirecting
+        >> for output redirecting ( appending mode )
+        << for input redirecting ( interactive mode )  **  // here-document command
+        |  for redirecting output of one command as input to the another command
+
+        eg: standerd output redirection
+        ==============================================
+
+            ls data > data/a.txt ( or )  ls > a.txt
+            #  here we are writing ls command result to a file
+
+            ---------------------------------------------
+            ---------------------------------------------
+
+            ls data >> data/a.txt 
+            #  standerd output redirection in append mode
+
+         eg: standerd error redirection
+         ==============================================
+
+             ls aa 2>> data/error.txt
+            # here we are redirecting the error to the file in appending mode
+            # here error may come if 'aa' named file doesn't exists
+
+         eg: standerd error & output redirection
+        ================================================
+
+            ls data aa >> data/a.txt 2>> data/error.txt
+            # redirecting output & error to seperate files
+
+            -------------------------------
+
+            ls data aa >> data/a.txt 2>&1
+            # redirecting standerd output and error to same file
+              i.e   output is redirected to data/a.txt
+                    error is redirected  output, and output already redirected to the file
+
+        
+          eg: standerd input redirection
+         =======================================================
+
+             sort < data/a.txt     // sort command sorts file contents (line by line)
+
+            ----------------------
+
+             cat < data/a.txt
+
+
+             -----------------
+            wc < data/a.txt     // wc command gives new lines (\n) count, word count, byte and characters count 
+                                // wc -l // lines count
+
+
+            ---------------------------------------------
+            ---------------------------------------------
+            eg:  <<  // here-document      ( ***********   )
+                   
+               ussage: 
+                    command << delimiter
+                     document // multi line text
+                     delimiter
+
+
+               eg:
+                  wc -l << EOF
+                     This is a simple lookup program 
+                     for good (and bad) restaurants
+                     in Cape Town.
+                  EOF    
+            
+            // will give output 3
+
+            ---------------------
+              
+            we can use this is shell script also
+
+            #!/bin/sh
+
+               cat << EOF
+               This is a simple lookup program 
+               for good (and bad) restaurants
+               in Cape Town.
+               EOF	
+
+
+
+
+
+
+
+
+         eg: standerd input & output redirection
+         ====================================================
+             sort < data/a.txt > data/sort.txt
+
+          
+         eg: Piping 
+         ====================================================
+          cat a.txt | sort    // we are Piping the cat command result to sort command
+
+
+         Discard the output / error
+         ====================================================
+         Discard:- not displaying the output/error.
+            we can achieve this by redirecting the output/error to file /dev/null
+           
+         eg: 
+            command > /dev/null
+            command > /dev/null 2>&1   // error & output redirection
+
+            eg: ls > /dev/null
+              
+     
+             
+
+

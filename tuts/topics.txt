@@ -1,0 +1,57 @@
+           
+======================================== Topics =========================================
+
+0)  man     
+          $ man command
+            ## this gives documentation/ man page of that command  from Unix documentation
+            ## need internet 
+
+1) hello world -> tut_1_hello_world.sh
+2) variables  ->  tut_2_variables.sh
+
+    data types:-
+           
+           primitive:
+                String, Number, Boolean
+
+           refernce:
+               Array
+
+
+3) inputs / read  -> tut_3_std_io.sh
+
+4) operators -> tut_4_operators
+                 ref https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+                ( while going for comparision operators --> see control statements (if) )
+
+5) control statements -> tut_5_control_statements
+     a) if, if-else, nested -> cs_1_if_else.sh
+     c) case ( switch ) -> cs_2_case.sh
+     b) loops & loop controls -> cs_3_loops.sh
+         1) for
+         2) while
+         3) until
+
+         4) select loop -> cs_4_select_loop.sh
+             ref https://bash.cyberciti.biz/guide/Select_loop
+
+6) substitutions  -> tut_6_substitutions            
+                 variable substitution  -> sub_1_variable_sub.sh
+                 command substitution   -> sub_2_command_sub.sh
+
+7) i/o redirections -> tut_7_std_oi_redirection
+
+5) functions  -> tut_8_functions.sh
+
+6) arrays -> tut_9_arrays.sh
+                 ref:- https://www.geeksforgeeks.org/array-basics-shell-scripting-set-1/
+
+6) strings -> tut_10_strings.sh
+
+7) regex -> tut_11_regex
+
+
+refere 
+ https://www.thegeekstuff.com/2010/05/bash-shell-special-parameters/
+ https://www.thegeekstuff.com/2009/09/unix-sed-tutorial-replace-text-inside-a-file-using-substitute-command/
+ https://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/

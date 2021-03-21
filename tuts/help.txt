@@ -1,12 +1,19 @@
 
 Refernces
 
-   github https://github.com/kbdrreddy7/shell-scripting-tutorial
+
 1) Beginner's guide https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf
 2) documents https://wiki.bash-hackers.org/
     or http://mywiki.wooledge.org/BashGuide
 
 3) Unix/Linux & Shell   https://www.tutorialspoint.com/unix/index.htm
+
+4) Useful topics https://linuxhint.com/category/bash-programming/
+
+5) github tutorial https://github.com/techarkit/shell-scripting-tutorial  
+
+7) github  important programs https://github.com/dylanaraps/pure-bash-bible    ( *** )
+
 
 
 
@@ -56,42 +63,17 @@ Refernces
                               if the hashbang is #!/usr/bin/bash  then 
                                    /usr/bin/bash file
 
-           
-
-            
-======================================== Topics =========================================
-1) hello world -> tut1.sh
-2) variables  ->  tut2.sh
-
-    data types:-
-           
-           primitive:
-                String, Number, Boolean
-
-           refernce:
-               Array
 
 
-3) inputs / read  -> tut3.sh
+========================================
 
-4) operators -> tut4 & ref https://www.tutorialspoint.com/unix/unix-basic-operators.htm
-                ( while going for comparision operators --> see control statements (if) )
+$ cat /etc/shells   -> gives all shell scripts that are available in the system
 
-5) control statements 
-     a) if, if-else, nested -> tut5.sh
-     c) case ( switch ) -> tut6.sh
-     b) loops
-         1) for
-         2) while
-         3) do-while  
+$ cat /etc/passwd | grep ^userName   --> to print user default shell 
 
-5) functions
-
-6) 
-   
+default shell are defined per user in /etc/passwd   file
+  eg: for user ravinder
+      ravinder:x:1000:1000:ravinder,,,:/home/ravinder:/bin/bash
 
 
-  
-
-https://www.tutorialspoint.com/unix/unix-basic-operators.htm
-https://www.tutorialspoint.com/unix/unix-shell-substitutions.htm
+      

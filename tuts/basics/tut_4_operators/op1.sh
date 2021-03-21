@@ -2,7 +2,7 @@
 # Arithmetical Operators
 
 : '
-
+   +, -, *, /, %
 '
 
 
